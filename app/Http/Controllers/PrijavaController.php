@@ -137,7 +137,7 @@ class PrijavaController extends Controller
     public function generatePDF()
     {
         $pdf = PDF::loadView('myPDF', $prijava);
-  
+        //pdfa
         return $pdf->download('itsolutionstuff.pdf');
     }
 }
